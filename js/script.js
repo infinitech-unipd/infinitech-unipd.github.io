@@ -1,6 +1,8 @@
 'use strict';
 
-$( document ).ready(function() {
+$(document).ready(function() {
+
+  /* Side nav settings */
   $('.button-collapse').sideNav({
       closeOnClick: true
     }
@@ -15,4 +17,11 @@ $( document ).ready(function() {
     }
   ];
   Materialize.scrollFire(options);
+
+  /* Repo settings */
+  $('#source').repo({
+    user: 'infinitech-unipd',
+    name: 'Premi',
+    branch: 'master'
+  });
 });
